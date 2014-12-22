@@ -1,0 +1,155 @@
+﻿#EXTM3U
+
+#EXTINF:-1 aspect-ratio=4:3 tvg-name="Беларусь 1" group-title="Социальный пакет", Беларусь 1 (тест)
+udp://@233.81.116.1:1234
+#EXTINF:-1 aspect-ratio=4:3 tvg-name="Беларусь 2", Беларусь 2 (тест)
+udp://@233.81.116.2:1234
+#EXTINF:-1 aspect-ratio=4:3 tvg-name="Беларусь 3", Беларусь 3 (тест)
+udp://@233.81.116.7:1234
+#EXTINF:-1 aspect-ratio=4:3 tvg-name="ОНТ", ОНТ (тест)
+udp://@233.81.116.3:1234
+#EXTINF:-1 aspect-ratio=4:3 tvg-name="СТВ", СТВ (тест)
+udp://@233.81.116.4:1234
+#EXTINF:-1 aspect-ratio=4:3 tvg-name="НТВ-Беларусь", НТВ Беларусь (тест)
+udp://@233.81.116.5:1234
+#EXTINF:-1 aspect-ratio=4:3 tvg-name="РТР-Беларусь", РТР Беларусь (тест)
+udp://@233.81.116.6:1234
+#EXTINF:-1 aspect-ratio=4:3 tvg-name="МирТВ", МИР
+udp://@233.81.116.8:1234
+
+#EXTINF:-1 tvg-name="Euronews" group-title="Новостные", Euronews 
+udp://@233.81.116.21:1234
+#EXTINF:-1 tvg-name="РБК ТВ", Белбизнесченел
+udp://@233.81.116.24:1234
+
+#EXTINF:-1 tvg-name="Discovery Россия" group-title="Научно-популярные", Discovery (тест)
+udp://@233.81.116.70:1234
+#EXTINF:-1 tvg-name="Animal planet Россия", Animal Planet
+udp://@233.81.116.71:1234
+#EXTINF:-1 tvg-name="National Geographic Россия", National Geographic
+udp://@233.81.116.17:1234
+#EXTINF:-1 tvg-name="Viasat History", Viasat History
+udp://@233.81.116.104:1234
+#EXTINF:-1 tvg-name="Viasat Explorer Россия", Viasat Explore
+udp://@233.81.116.103:1234
+#EXTINF:-1 tvg-name="Da Vinci Learning Россия", Da Vinci Learning
+udp://@233.81.116.28:1234
+#EXTINF:-1 tvg-name="History Россия", History
+udp://@233.81.116.40:1234
+#EXTINF:-1 tvg-name="Моя планета", Моя планета
+udp://@233.81.116.41:1234
+#EXTINF:-1 tvg-name="Наука 2.0", Наука 2.0
+udp://@233.81.116.26:1234
+#EXTINF:-1 tvg-name="24Техно", 24 техно
+udp://@233.81.116.98:1234
+#EXTINF:-1 tvg-name="Оружие", Оружие
+udp://@233.81.116.110:1234
+#EXTINF:-1 tvg-name="365 дней ТВ", 365 дней
+udp://@233.81.116.45:1234
+#EXTINF:-1 tvg-name="ZooПарк", ZOOпарк
+udp://@233.81.116.43:1234
+
+#EXTINF:-1 tvg-name="TV1000 East" group-title="Кино", TV 1000
+udp://@233.81.116.83:1234
+#EXTINF:-1 tvg-name="TV1000 Action East", TV 1000 Action
+udp://@233.81.116.80:1234
+#EXTINF:-1 tvg-name="TV1000 Русское кино", TV 1000 Русское кино
+udp://@233.81.116.84:1234
+#EXTINF:-1 tvg-name="Кино Плюс", НТВ Кино Плюс
+udp://@233.81.116.32:1234
+#EXTINF:-1 tvg-name="Иллюзион+", Иллюзион+
+udp://@233.81.116.87:1234
+#EXTINF:-1 tvg-name="Еврокино", Еврокино
+udp://@233.81.116.27:1234
+#EXTINF:-1 tvg-name="Феникс+Кино", Феникс+кино
+udp://@233.81.116.30:1234
+#EXTINF:-1 tvg-name="НСТ", НСТВ
+udp://@233.81.116.86:1234
+#EXTINF:-1 tvg-name="Индия ТВ", Индия ТВ
+udp://@233.81.116.66:1234
+#EXTINF:-1 tvg-name="НТВ+ Премьера", НТВ+ Премьера
+udp://@233.81.116.88:1234
+#EXTINF:-1 tvg-name="Киносоюз", НТВ+ Киносоюз
+udp://@233.81.116.85:1240
+#EXTINF:-1 tvg-name="НТВ+ Кинохит", НТВ+ Кинохит
+udp://@233.81.116.25:1234
+#EXTINF:-1 tvg-name="Русский экстрим", Русский экстрим
+udp://@233.81.116.67:1234
+
+#EXTINF:-1 tvg-name="Eurosport" group-title="Спорт", Eurosport
+udp://@233.81.116.74:1234
+#EXTINF:-1 tvg-name="НТВ+ Наш футбол", НТВ+ Наш Футбол
+udp://@233.81.116.33:1234
+#EXTINF:-1 tvg-name="КХЛ ТВ", КХЛ
+udp://@233.81.116.107:1234
+#EXTINF:-1 tvg-name="Боец", Боец
+udp://@233.81.116.39:1234
+#EXTINF:-1 aspect-ratio=16:9 tvg-name="Setanta Sports Eurasia", Сетанта спорт
+udp://@233.81.116.93:1234
+#EXTINF:-1 aspect-ratio=4:3 tvg-name="Беларусь 5", Беларусь 5 (тест)
+udp://@233.81.116.19:1234
+
+#EXTINF:-1 tvg-name="Paramount Comedy Россия" group-title="Разное", Paramount Comedy
+udp://@233.81.116.92:1234
+#EXTINF:-1 tvg-name="Перец International", Перец I
+udp://@233.81.116.29:1234
+#EXTINF:-1 tvg-name="Авто Плюс", Авто Плюс
+udp://@233.81.116.38:1234
+#EXTINF:-1 tvg-name="Драйв", Драйв
+udp://@233.81.116.49:1234
+#EXTINF:-1 tvg-name="Охота и рыбалка", Охота и рыбалка
+udp://@233.81.116.44:1234
+#EXTINF:-1 tvg-name="Ностальгия", Ностальгия
+udp://@233.81.116.54:1234
+#EXTINF:-1 tvg-name="Усадьба", Усадьба ТВ
+udp://@233.81.116.42:1234
+#EXTINF:-1 tvg-name="STV", STV
+udp://@233.81.116.61:1234
+#EXTINF:-1 tvg-name="Сарафан", Сарафан ТВ
+udp://@233.81.116.35:1234
+#EXTINF:-1 tvg-name="Кухня ТВ", Кухня ТВ
+udp://@233.81.116.50:1234
+#EXTINF:-1 tvg-name="Здоровое ТВ", Здоровое ТВ
+udp://@233.81.116.51:1234
+#EXTINF:-1 tvg-name="Мать и дитя", Мать и дитя
+udp://@233.81.116.109:1234
+#EXTINF:-1 tvg-name="ВТВ", ВТВ
+udp://@233.81.116.76:1234
+#EXTINF:-1 tvg-name="Культура", Россия К
+udp://@233.81.116.91:1234
+#EXTINF:-1 tvg-name="Союз (Екатеринбург)", Союз
+udp://@233.81.116.46:1234
+#EXTINF:-1 tvg-name="RTVI", RTVi
+udp://@233.81.116.68:1234
+
+#EXTINF:-1 tvg-name="Nickelodeon Россия" group-title="Детские", Nickelodeon
+udp://@233.81.116.62:1234
+#EXTINF:-1 tvg-name="Nick Jr", NickJr
+udp://@233.81.116.34:1234
+#EXTINF:-1 tvg-name="Мультимания", Мультимания
+udp://@233.81.116.55:1234
+#EXTINF:-1 tvg-name="Детский", Детский
+udp://@233.81.116.56:1234
+#EXTINF:-1 tvg-name="Карусель", Карусель
+udp://@233.81.116.53:1234
+#EXTINF:-1 tvg-name="TiJi Россия", Tiji
+udp://@233.81.116.82:1234
+
+#EXTINF:-1 tvg-name="VH1 Europe" group-title="Музыка", VH1
+udp://@233.81.116.48:1234
+#EXTINF:-1 tvg-name="VH1 Classic Europe", VH1 Classic
+udp://@233.81.116.94:1234
+#EXTINF:-1 tvg-name="Europa Plus TV", Europa Plus TV
+udp://@233.81.116.47:1234
+#EXTINF:-1 tvg-name="Mezzo", Mezzo
+udp://@233.81.116.89:1234
+#EXTINF:-1 tvg-name="MTV Dance", MTV Dance
+udp://@233.81.116.95:1234
+#EXTINF:-1 tvg-name="MTV Rocks", MTV Rocks
+udp://@233.81.116.96:1234
+#EXTINF:-1 tvg-name="A-one", A-One
+udp://@233.81.116.18:1234
+#EXTINF:-1 tvg-name="Муз-ТВ", БелмузТВ
+udp://@233.81.116.75:1234
+#EXTINF:-1 tvg-name="MCM Top", MCM Top
+udp://@233.81.116.97:1234
