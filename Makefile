@@ -1,5 +1,5 @@
 M3UFILE=examples/TVPACKET2.m3u
-OUTDIR=tvheadend
+OUTDIR=/tmp/tvheadend
 
 .PHONY: import clean
 
