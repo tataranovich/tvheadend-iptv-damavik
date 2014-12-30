@@ -23,6 +23,4 @@ if [ "x$MTIME_OLD" != "x$MTIME_NEW" ]; then
     rm -fr ~/.hts/tvheadend/channels/ ~/.hts/tvheadend/iptvservices/
     "$RUN_PREFIX/tvheadend.py" "$M3U_LOCAL" ~/.hts/tvheadend/
     sudo /etc/init.d/tvheadend start
-else
-    echo "Playlist not changed, skipping..."
 fi

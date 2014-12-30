@@ -10,7 +10,10 @@ import os.path
 import json
 import parser
 import re
+import tvguide
 
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 def write_json(filename, obj):
     json_file = open(filename, 'w')
@@ -20,11 +23,14 @@ def write_json(filename, obj):
 
 def configure_tvheadend(playlist, outdir):
     i = 0
+    xmltv_channel_names = tvguide.ChannelNameTransform('tvguide.json')
     for entry in playlist:
         i += 1
         title = entry.title
         if 'tvg-name=' in entry.length:
             title = re.search(r'tvg-name="([^"]+)"', entry.length).group(1)
+        if not xmltv_channel_names.replace(unicode(title)) is None:
+            title = xmltv_channel_names.replace(unicode(title))
         channel = {'name': title, 'channel_number': i}
         write_json(os.path.join(outdir, 'channels', str(i)), channel)
         group, port = entry.path.split('udp://@')[1].split(':', 1)
