@@ -21,9 +21,9 @@ def write_json(filename, obj):
     json_file.close()
 
 
-def configure_tvheadend(playlist, outdir):
+def configure_tvheadend(playlist, xmltv_match_file, outdir):
     i = 0
-    xmltv_channel_names = tvguide.ChannelNameTransform('tvguide.json')
+    xmltv_channel_names = tvguide.ChannelNameTransform(xmltv_match_file)
     for entry in playlist:
         i += 1
         title = entry.title
@@ -40,19 +40,23 @@ def configure_tvheadend(playlist, outdir):
 
 
 def show_usage():
-    print 'Usage: tvheadend.py <M3Ufile> <OutputDir>'
+    print 'Usage: tvheadend.py <M3Ufile> <xmltv-match.json> <OutputDir>'
 
 
 def main():
-    if len(sys.argv) < 3:
+    if len(sys.argv) < 4:
         show_usage()
         sys.exit(1)
 
     m3ufile = sys.argv[1]
-    outdir = sys.argv[2]
+    xmltv_match = sys.argv[2]
+    outdir = sys.argv[3]
 
     if not os.path.isfile(m3ufile):
         print >> sys.stderr, '[Error] Specified M3U file not found: %s' % m3ufile
+        sys.exit(1)
+    if not os.path.isfile(xmltv_match):
+        print >> sys.stderr, '[Error] Specified XMLTV match file not found: %s' % xmltv_match
         sys.exit(1)
     if not os.path.isdir(outdir):
         print >> sys.stderr, '[Error] Specified output directory not found: %s' % outdir
@@ -65,7 +69,7 @@ def main():
             print >> sys.stderr, 'Unable to create tvheadend directory structure'
             sys.exit(1)
 
-    configure_tvheadend(parser.parse_m3u_file(m3ufile), outdir)
+    configure_tvheadend(parser.parse_m3u_file(m3ufile), xmltv_match, outdir)
 
 if __name__ == '__main__':
     main()

@@ -21,6 +21,6 @@ if [ "x$MTIME_OLD" != "x$MTIME_NEW" ]; then
     echo "Playlist changed, importing..."
     sudo /etc/init.d/tvheadend stop
     rm -fr ~/.hts/tvheadend/channels/ ~/.hts/tvheadend/iptvservices/
-    "$RUN_PREFIX/tvheadend.py" "$M3U_LOCAL" ~/.hts/tvheadend/
+    "$RUN_PREFIX/tvheadend.py" "$M3U_LOCAL" "$RUN_PREFIX/tvguide.json" ~/.hts/tvheadend/
     sudo /etc/init.d/tvheadend start
 fi
