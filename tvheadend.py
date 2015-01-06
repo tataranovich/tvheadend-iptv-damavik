@@ -27,10 +27,13 @@ def configure_tvheadend(playlist, xmltv_match_file, outdir):
     for entry in playlist:
         i += 1
         title = entry.title
-        if 'tvg-name=' in entry.length:
-            title = re.search(r'tvg-name="([^"]+)"', entry.length).group(1)
-        if not xmltv_channel_names.replace(unicode(title)) is None:
-            title = xmltv_channel_names.replace(unicode(title))
+        try:
+            if 'tvg-name=' in entry.length:
+                title = re.search(r'tvg-name="([^"]+)"', entry.length).group(1)
+            if not xmltv_channel_names.replace(unicode(title)) is None:
+                title = xmltv_channel_names.replace(unicode(title))
+        except:
+            print >> sys.stderr, '[Error] Failed to transform entry: %s' % title
         channel = {'name': title, 'channel_number': i}
         write_json(os.path.join(outdir, 'channels', str(i)), channel)
         group, port = entry.path.split('udp://@')[1].split(':', 1)
