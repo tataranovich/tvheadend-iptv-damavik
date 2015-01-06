@@ -13,7 +13,7 @@ else
     MTIME_OLD=0
 fi
 
-if [ "$1" == "--force" ]; then
+if [ "$1" = "--force" ]; then
     MTIME_OLD=0
 fi
 
