@@ -13,6 +13,10 @@ else
     MTIME_OLD=0
 fi
 
+if [ "$1" == "--force" ]; then
+    MTIME_OLD=0
+fi
+
 wget -q -N "$TVGUIDE_URL" -O "$TVGUIDE_LOCAL"
 MTIME_NEW=$(stat -c %Y "$TVGUIDE_LOCAL")
 if [ "x$MTIME_OLD" != "x$MTIME_NEW" ]; then
