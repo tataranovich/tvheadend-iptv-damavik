@@ -24,7 +24,6 @@ if [ "x$MTIME_OLD" != "x$MTIME_NEW" ]; then
     rm -fr ~/.hts/tvheadend/epggrab/xmltv/channels/ ~/.hts/tvheadend/epgdb.v2
     "$RUN_PREFIX/tvheadend.py" "$M3U_LOCAL" "$RUN_PREFIX/tvguide.json" ~/.hts/tvheadend/
     sudo /etc/init.d/tvheadend start
-    sleep 5s
     echo "Forcing EPG import..."
     "$RUN_PREFIX/tvheadend-import-tvguide.sh" --force
 fi
