@@ -2,13 +2,13 @@
   "ОНТ": "ОНТ (Беларусь)",
   "НТВ-Беларусь": "НТВ Беларусь",
   "РТР-Беларусь": "РТР Беларусь",
-  "МирТВ": "МИР",
+  "Мир": "МИР",
   "Euronews": "EuroNews",
   "РБК ТВ": "РБК",
   "Discovery Россия": "Discovery Channel",
   "Animal planet Россия": "Animal Planet",
   "National Geographic Россия": "National Geographic",
-  "Viasat Explorer Россия": "Viasat Explorer",
+  "Viasat Explore Россия": "Viasat Explorer",
   "Da Vinci Learning Россия": "Da Vinci",
   "History Россия": "History",
   "Моя планета": "Моя Планета",
@@ -43,5 +43,7 @@
   "VH1 Europe": "VH1 European",
   "VH1 Classic Europe": "VH1 Classic",
   "A-one": "A-ONE",
-  "Муз-ТВ": "БелМузТВ (Беларусь)"
+  "Муз-ТВ": "БелМузТВ (Беларусь)",
+  "MTV Dance International": "MTV Dance",
+  "MTV Rocks International": "MTV Rocks"
 }
