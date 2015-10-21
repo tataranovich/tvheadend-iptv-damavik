@@ -20,8 +20,9 @@ if [ "x$MTIME_OLD" != "x$MTIME_NEW" ]; then
     # File was changed on the server, we need to import it
     echo "Playlist changed, importing..."
     sudo /etc/init.d/tvheadend stop
+    # Cleanup old channel/epg configuration
     rm -fr ~/.hts/tvheadend/channels/ ~/.hts/tvheadend/iptvservices/
-    rm -fr ~/.hts/tvheadend/epggrab/xmltv/channels/ ~/.hts/tvheadend/epgdb.v2
+    rm -fr ~/.hts/tvheadend/epggrab/xmltv/channels/ ~/.hts/tvheadend/epgdb.v2 ~/.hts/tvheadend/imagecache/meta/
     "$RUN_PREFIX/tvheadend.py" "$M3U_LOCAL" "$RUN_PREFIX/tvguide.json" ~/.hts/tvheadend/
     sudo /etc/init.d/tvheadend start
     echo "Forcing EPG import..."
