@@ -34,13 +34,18 @@ def main():
                 m = re.match(patterns[i], title_value)
                 name_value = m.group('name')
 
-                description_value = m.group('desc')
-                description = ET.SubElement(programme, 'desc')
-                description.text = description_value.encode('UTF-8')
-
-                country_value = m.group('country')
-                country = ET.SubElement(programme, 'country')
-                country.text = country_value.encode('UTF-8')
+                try:
+                    description_value = m.group('desc')
+                    description = ET.SubElement(programme, 'desc')
+                    description.text = description_value.encode('UTF-8')
+                except:
+                    pass
+                try:
+                    country_value = m.group('country')
+                    country = ET.SubElement(programme, 'country')
+                    country.text = country_value.encode('UTF-8')
+                except:
+                    pass
 
                 try:
                     category_value = m.group('category')
@@ -56,7 +61,10 @@ def main():
                 except:
                     pass
 
-                title.text = name_value.encode('UTF-8')
+                try:
+                    title.text = name_value.encode('UTF-8')
+                except:
+                    pass
                 break
 
             # If title length larger than filesystem maximum file name size then tvheadend failed to record show
