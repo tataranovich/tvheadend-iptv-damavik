@@ -5,8 +5,8 @@
 # Website: https://github.com/tataranovich/tvheadend-iptv-damavik
 
 RUN_PREFIX="$(dirname $0)"
-M3U_URL="http://help.telecom.by/_files/TelecomTV/TelecomTVpacket/TVPACKET2.m3u"
-M3U_LOCAL="$HOME/TVPACKET2.m3u"
+M3U_URL="http://help.telecom.by/_files/TelecomTV/TelecomTVpacket/TVPACKET3.m3u"
+M3U_LOCAL="$HOME/TVPACKET3.m3u"
 
 if [ -f "$M3U_LOCAL" ]; then
     MTIME_OLD=$(stat -c %Y "$M3U_LOCAL")
